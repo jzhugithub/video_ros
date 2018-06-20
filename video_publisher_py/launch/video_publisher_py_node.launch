@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="video_publisher_py" name="video_publisher_py_node" type="video_publisher_py_node.py" output="screen">
+        <param name="show_video_flag" type="bool" value="true"/>
+        <param name="published_video_file_name" type="string"
+               value="/home/zj/database/fisheye2_data/video/out_fisheye01194square.avi"/>
+        <!--param name="published_video_file_name" type="int" value="0"/-->
+        <param name="given_video_rate" type="double" value="30.0"/>
+    </node>
+</launch>

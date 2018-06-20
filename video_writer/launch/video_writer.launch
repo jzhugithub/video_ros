@@ -1,0 +1,10 @@
+<launch>
+  <node pkg="video_writer" name="video_writer_node" type="video_writer_node" output="screen">
+  <!--param name="subscribed_topic" type="string" value="/dji_sdk/image_raw"/-->
+  <param name="subscribed_topic" type="string" value="/my_video"/>
+  <param name="show_video_flag" type="bool" value="true"/>
+  <param name="save_video_flag" type="bool" value="true"/>
+  <param name="video_file_name" type="string" value="/home/ubuntu/ros_my_workspace/src/video_writer/video/vivi.avi"/>
+  <param name="rate" type="double" value="30.0"/>
+  </node>
+</launch>
